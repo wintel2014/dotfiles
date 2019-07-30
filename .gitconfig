@@ -1,0 +1,11 @@
+[user]
+	name = wintel2014
+	email = wintel@dot.com
+[core]
+	editor = vim
+[push]
+	default = current
+[log]
+	date = local
+[credential]
+	helper = store
