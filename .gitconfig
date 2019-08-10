@@ -3,6 +3,7 @@
 	email = wintel@dot.com
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore
 [push]
 	default = current
 [log]
