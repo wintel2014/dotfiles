@@ -1,0 +1,22 @@
+sudo apt-get install samba samba-common
+sudo smbpasswd -a jiazi
+
+cd /etc/samba/
+sudo cp smb.conf smb.conf.bak
+sudo vim smb.conf
+/*
+[Ubuntu16.04]
+comment = share folder
+browseable = yes
+path = /home/jiazi
+create mask = 0700
+directory mask = 0700
+valid users = jiazi
+force user = jiazi
+force group = jiazi
+public = yes 
+available = yes 
+writable = yes
+*/
+
+sudo service smbd restart
